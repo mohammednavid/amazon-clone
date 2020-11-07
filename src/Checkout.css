@@ -1,0 +1,37 @@
+.checkout{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+    position: relative;
+}
+.checkout__ad{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.checkout__title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    position: absolute;
+}
+@media(max-width:760px){
+    .checkout{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        
+    }
+    .checkout__left{
+        order: 1;
+    }
+    .checkout__title{
+        order: 3;
+        margin-top: 170px;
+    }
+    .checkout__right{
+        order: 2;
+    }
+}
